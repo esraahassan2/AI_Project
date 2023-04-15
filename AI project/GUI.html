@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>House Price Predictor</title>
+	<style>
+		form {
+			margin: 50px auto;
+			width: 400px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		
+		input[type="text"], select {
+			display: block;
+			margin-bottom: 10px;
+			width: 90%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="bedrooms">Number of bedrooms:</label>
+		<input type="text" id="bedrooms" name="bedrooms" placeholder="Enter the number of bedrooms...">
+		<label for="bedrooms">Number of floors:</label>
+		<input type="text" id="bedrooms" name="bedrooms" placeholder="Enter the number of floors...">
+		
+		<label for="sqft">Square footage:</label>
+		<input type="text" id="sqft" name="sqft" placeholder="Enter the square footage...">
+		
+		<label for="location">Location:</label>
+		<select id="location" name="location">
+			<option value="1">Location 1</option>
+			<option value="2">Location 2</option>
+			<option value="3">Location 3</option>
+			<option value="4">Location 4</option>
+			<option value="5">Location 5</option>
+		</select>
+		
+		<input type="submit" value="Predict Price">
+	</form>
+</body>
+</html>
